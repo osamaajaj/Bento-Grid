@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root{
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+
+    --card-bor-rad: 8px;
+    --card-pad:30px;
+
+    --card-shadow: 0px 0px 5px #dbdbdb;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 150px;
+    background-color: rgb(231, 231, 231);
+    
+}
+
+img{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+}
+
+.wrapper{
+    
+    
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 250px auto auto 250px;
+    
+    grid-template-areas: "z a a f"
+                         " z b c f" 
+                         "z d e e"
+    
+}
+
+.wrapper>div{
+    border-radius: var(--card-bor-rad);
+    box-shadow: var(--card-shadow);
+}
+
+.card-text{
+    font-size: 2.3rem;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -2px;
+}
+
+
+
+
+
+
+
+/* Z */
+
+.wrapper .z{
+    grid-area: z;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    box-shadow: none;
+    
+}
+
+.z1{
+    background-color: var(--Yellow-100);
+    height: 412.5px;
+    border-radius: var(--card-bor-rad);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 30px;
+    box-shadow: var(--card-shadow);
+}
+
+.z .z1 p i{
+    color: var(--Purple-500);
+}
+
+.z2{
+    background-color: var(--Yellow-500);
+    min-height: 412.5px;
+    border-radius: var(--card-bor-rad);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--card-shadow);
+}
+
+
+
+
+
+
+
+/* A */
+
+.a{
+    grid-area: a;
+    width: 525px;
+    height: 300px;
+    background-color: var(--Purple-500);
+    padding: 55px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.a p{
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 50px;
+    color: var(--White);
+}
+
+.a p span{
+    color: var(--Yellow-500);
+}
+
+.a img{
+    width: 42%;
+    margin: 30px 0 7px 0;
+    text-align: center;
+}
+
+.a >span{
+    color: var(--White);
+    font-weight: 300;
+}
+
+
+
+
+
+
+/* B */
+.b{
+    grid-area: b;
+    width: 250px;
+    height: 250px;
+    background-color: var(--White);
+    overflow-x: hidden;
+    padding: var(--card-pad);
+}
+
+.b img{
+    width: 150%;
+    
+}
+
+.b p{
+    font-size: 2rem;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* C */
+
+.c{
+    grid-area: c;
+    width: 250px;
+    height: 250px;
+    background-color: var(--Yellow-500);
+    padding: var(--card-pad) ;
+    overflow-y: hidden;
+}
+
+.c  p{
+    font-size: 2rem;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+/* D */
+
+.d{
+    grid-area: d;
+    width: 250px;
+    height: 250px;
+    background-color: var(--White);
+    padding: var(--card-pad);
+
+}
+
+.d p{
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.d img{
+    width: 80%;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* E */
+.e{
+    grid-area: e;
+    width: 525px;
+    height: 250px;
+    padding: var(--card-pad);
+    background-color: var(--Purple-500);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.e img{
+    width: 50%;
+}
+
+.e p{
+    color: var(--White);
+}
+
+
+
+
+
+
+
+
+
+
+
+.f{
+    grid-area: f;
+    background-color: var(--Purple-100);
+    overflow-x: hidden;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.f p{
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+.f img{
+    width: 185%;
+}
+
+.f span{
+    font-weight: 500;
+}
