@@ -301,3 +301,112 @@ img{
 .f span{
     font-weight: 500;
 }
+
+
+
+@media  (max-width:540px) {
+    body{
+    /* min-height: 100vh;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 150px;
+    background-color: rgb(231, 231, 231); */
+    flex-direction: column;
+    padding: 0;
+    
+    
+}
+    .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .wrapper>div{
+        width: 100%;
+        padding: 25px;
+        height: auto;
+    }
+
+    .wrapper .a img{
+        width: 55%;
+    }
+
+    .wrapper .b p{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .wrapper .b img{
+        width: 100%;
+    }
+
+    .wrapper .c{
+        height: 250px;
+        overflow-y: hidden;
+        
+    }
+    .wrapper .c img{
+        width: 75%;
+    }
+
+    .wrapper .f{
+        overflow: visible;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .wrapper .f img{
+        width: 100%;
+    }
+
+    .wrapper .f span{
+        font-size: 1.2rem;
+    }
+
+    .wrapper .e{
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .wrapper .e img{
+        width: 80%;
+        align-items: center;
+
+    }
+
+    .wrapper .e p{
+        padding: 0 10%;
+        font-size: 2.5rem;
+        line-height: 40px;
+    }
+
+    .wrapper .d span{
+        font-size: 1.3rem;
+    }
+
+    .wrapper .z{
+        padding: 0;
+    }
+
+    .wrapper .z .z1{
+        height: auto;
+        padding: 30px;
+    }
+    
+    .wrapper .z .z1 img{
+        width: 60%;
+    }
+    
+    .wrapper .z .z2{
+        gap: 20px;
+    }
+
+    .wrapper .z .z2 img{
+        width: 80%;
+    }
+    
+}
